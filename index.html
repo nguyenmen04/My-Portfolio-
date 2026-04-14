@@ -1,666 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CV of Nguyen Thi Men</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-        <link rel="stylesheet" type='text/css'
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="styles.css">
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thị Men - Frontend Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Decorations -->
+    <div class="bg-decorations">
+        <div class="bg-circle-1"></div>
+        <div class="bg-circle-2"></div>
+    </div>
 
-    </head>
-    <body>
-        <!-- navbar -->
-        <nav class="navbar">
-            <a href="#" class="nav-logo">MEN<span>.DEV</span></a>
-            <div class="nav-links">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#skills">Skills & projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
-        </nav>
+    <!-- Floating Navigation -->
+    <nav class="nav-dots">
+        <button class="nav-dot active" data-section="hero">
+            <span class="nav-dot-label">Hero</span>
+        </button>
+        <button class="nav-dot" data-section="about">
+            <span class="nav-dot-label">About</span>
+        </button>
+        <button class="nav-dot" data-section="projects">
+            <span class="nav-dot-label">Projects</span>
+        </button>
+        <button class="nav-dot" data-section="education">
+            <span class="nav-dot-label">Education</span>
+        </button>
+        <button class="nav-dot" data-section="skills">
+            <span class="nav-dot-label">Skills</span>
+        </button>
+    </nav>
 
-        <!-- main content -->
-        <div
-            class="main-content container d-flex justify-content-center align-items-center">
-            <div class="bento-grid col-lg-10">
-                <div class="col-12" data-aos="zoom-in">
-                    <div class="card w-100 border-0 hero-card overflow-hidden">
-                        <div class="bg-blur-blob"></div>
-
-                        <div class="card-body p-4 p-lg-5 position-relative z-1">
-                            <div class="row align-items-center">
-
-                                <div class="col-lg-7 col-12 order-2 order-lg-1">
-
-                                    <div class="mb-3">
-                                        <span class="role-badge">
-                                            <i
-                                                class="fas fa-code me-2"></i>Frontend
-                                            Developer Intern
-                                        </span>
-                                    </div>
-
-                                    <h1 class="hero-name mt-2 mb-3">
-                                        Nguyễn Thị <span
-                                            class="text-gradient">Mến</span>
-                                    </h1>
-
-                                    <div class="desc text-secondary lh-lg mb-4">
-                                        <p class="fs-5 mb-2">
-                                            Final year student at <strong>Duy
-                                                Tan University</strong>,
-                                            majoring in Software Engineering.
-                                        </p>
-                                        <p class="mb-0 text-light opacity-75">
-                                            I have a great passion for building
-                                            smooth user interfaces. I have a
-                                            forward-thinking mindset, am ready
-                                            to break new ground with
-                                            <strong>Agile/Scrum</strong>
-                                            methodologies, and build real-world
-                                            products.
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="social-links d-flex gap-3 align-items-center mt-4">
-                                        <a href="https://github.com/nguyenmen04"
-                                            target="_blank"
-                                            class="social-btn github"
-                                            title="Github">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                        <a
-                                            href="mailto:nguyenthimen190504@gmail.com"
-                                            target="_blank"
-                                            class="social-btn email"
-                                            title="nguyenthimen190504@gmail.com">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a href="tel:0828041686"
-                                            target="_blank"
-                                            class="social-btn phone"
-                                            title="0828041686">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </a>
-                                        <a
-                                            href="https://www.google.com/maps/place/Thanh+Kh%C3%AA,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam/@16.0564833,108.1702393,14z/data=!3m1!4b1!4m6!3m5!1s0x31421907f4e404e3:0xdf90a41801904e48!8m2!3d16.0641802!4d108.1873407!16s%2Fm%2F03mbk0d?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
-                                            class="social-btn map"
-                                            target="_blank"
-                                            title="Thanh Khê, Đà Nẵng">
-                                            <i
-                                                class="fas fa-map-marker-alt"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="col-lg-5 col-12 order-1 order-lg-2 mb-4 mb-lg-0 text-center">
-                                    <div class="image-wrapper">
-                                        <img src="/img/avt.jpg"
-                                            class="hero-img object-fit-cover"
-                                            alt="Avatar">
-                                        <div class="float-icon icon-1"><i
-                                                class="fa-brands fa-html5"></i></div>
-                                        <div class="float-icon icon-2"><i
-                                                class="fa-brands fa-css3-alt"></i></div>
-                                    </div>
-                                </div>
-
-                            </div>
+    <!-- Hero Section -->
+    <section id="hero" class="visible">
+        <div class="container hero">
+            <!-- Photo -->
+            <div class="hero-image">
+                <div class="hero-image-decorations"></div>
+                <div class="hero-circle-1"></div>
+                <div class="hero-circle-2"></div>
+                <div class="hero-image-content">
+                    <div class="hero-image-placeholder">
+                        <div class="icon-circle">
+                            <svg class="icon icon-large" viewBox="0 0 24 24">
+                                <path d="M16 18L22 12L16 6" />
+                                <path d="M8 6L2 12L8 18" />
+                            </svg>
                         </div>
+                        <p style="color: var(--muted-foreground); font-family: var(--font-display);">Photo Placeholder</p>
                     </div>
                 </div>
-
-                <div id="skills" class=" row mt-4">
-                    <!-- Tech -->
-                    <div class="col-lg-6 col-12" data-aos="fade-right">
-                        <div class="card h-100 card-tech-wrapper">
-                            <span class="bg-deco"
-                                style="top: -10px; right: -10px; font-size: 150px; transform: rotate(20deg);">}</span>
-                            <span class="bg-deco"
-                                style="bottom: 20px; left: -20px; font-size: 100px; transform: rotate(-15deg);">&lt;/&gt;</span>
-                            <span class="bg-deco"
-                                style="top: 40%; right: 20%; font-size: 40px;">;</span>
-                            <div class="card-body d-flex flex-column gap-3">
-                                <h3 class="text-secondary"><i
-                                        class="fas fa-tools text-primary"></i>
-                                    Tech Stack</h3>
-                                <div class="d-flex gap-3 flex-column">
-                                    <h4 class="fw-bold mb-1">Languages
-                                        &
-                                        Frameworks</h4>
-                                    <div class="d-flex gap-3 flex-wrap">
-                                        <a class="tech"
-                                            href="https://vuejs.org/"
-                                            target="_blank" rel="vuejs">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
-                                                class="img" />
-                                            Vue.js
-                                        </a>
-                                        <a class="tech"
-                                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                            target="_blank" rel="javascript">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                                class="img" />
-                                            JavaScript
-                                            (ES6)</a>
-                                        <a class="tech"
-                                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                                            target="_blank" rel="html5">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                                class="img" />
-                                            HTML5</a>
-                                        <a class="tech"
-                                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                                            target="_blank" rel="css3">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                                class="img" />
-                                            CSS3</a>
-
-                                        <a class="tech"
-                                            href="https://getbootstrap.com/"
-                                            target="_blank" rel="bootstrap">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                                                class="img" />
-                                            Bootstrap</a>
-                                    </div>
-
-                                </div>
-
-                                <div class="d-flex gap-3 flex-column">
-                                    <h4 class="fw-bold mb-1">Tools &
-                                        Workflow</h4>
-                                    <div class="d-flex flex-wrap gap-3">
-                                        <span class="tech">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
-                                                class="img" />
-                                            Git/GitHub
-                                            <div class="skill-dots">
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                            </div>
-                                        </span>
-                                        <span class="tech">
-                                            <img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-                                                class="img" />
-                                            Postman
-                                            <div class="skill-dots">
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                            </div></span>
-                                        <span class="tech"><img
-                                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
-                                                class="img" />
-                                            VS Code
-                                            <div class="skill-dots">
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                            </div>
-                                        </span>
-                                        <span class="tech">
-                                            <i
-                                                class="fa-solid fa-rotate img"></i>
-                                            Agile/Scrum
-                                            <div class="skill-dots">
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                                <span
-                                                    class="skill-dot active"></span>
-                                            </div></span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12" data-aos="fade-left">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
-                                    <div
-                                        class="card-body position-relative overflow-hidden"
-                                        style="min-height: 200px;">
-                                        <div class="position-relative z-1"> <h3
-                                                class="text-uppercase text-secondary mb-3">
-                                                <i
-                                                    class="fas fa-graduation-cap text-danger me-2"></i>Education
-                                            </h3>
-
-                                            <h4 class="fw-bold mb-1">Duy Tan
-                                                University</h4>
-                                            <p
-                                                class="text-white-50 mb-3">Majoring
-                                                in Software Engineering</p>
-
-                                            <div
-                                                class="d-flex align-items-center gap-3">
-                                                <span
-                                                    class="badge bg-dark border border-secondary p-2">
-                                                    <i
-                                                        class="far fa-calendar-alt me-1"></i>
-                                                    2022 - 2026
-                                                </span>
-                                                <span
-                                                    class="badge bg-success text-dark p-2 fw-bold">
-                                                    GPA: 3.26/4.0
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <img src="/img/logoDT-70.png"
-                                            alt="Logo"
-                                            class="position-absolute logo">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-3 mt-lg-3">
-                            <div class="col-12">
-                                <div class="card h-100">
-                                    <div
-                                        class="card-body d-flex flex-column gap-4 p-4">
-
-                                        <div
-                                            class="border-bottom border-secondary border-opacity-25 pb-2">
-                                            <h3 class="text-secondary">
-                                                <i
-                                                    class="fas fa-laptop-code text-warning me-2"></i>
-                                                My Projects
-                                            </h3>
-                                        </div>
-
-                                        <div class="project-item">
-                                            <div
-                                                class="d-flex justify-content-between align-items-start mb-2">
-                                                <h5
-                                                    class="fw-bold text-light mb-0">
-                                                    Personal Portfolio Website
-                                                </h5>
-                                                <span
-                                                    class="badge border border-success text-success bg-transparent rounded-pill">
-                                                    Completed
-                                                </span>
-                                            </div>
-
-                                            <p
-                                                class="text-secondary text-justify mb-3">
-                                                Designed and built a static
-                                                <strong>Responsive</strong>
-                                                (multi-device compatible)
-                                                website
-                                                to showcase personal skills,
-                                                abilities, and projects in a
-                                                professional manner.
-                                            </p>
-
-                                            <div
-                                                class="d-flex align-items-center flex-wrap gap-2">
-                                                <small
-                                                    class="text-secondary me-2"><i
-                                                        class="fas fa-tools me-1"></i>Technologies:</small>
-
-                                                <span class="badge-tech">
-                                                    <i
-                                                        class="fab fa-html5 text-danger me-1"></i>
-                                                    HTML5
-                                                </span>
-                                                <span class="badge-tech">
-                                                    <i
-                                                        class="fab fa-css3-alt text-primary me-1"></i>
-                                                    CSS3
-                                                </span>
-                                                <span class="badge-tech">
-                                                    <i
-                                                        class="fab fa-bootstrap text-purple me-1"
-                                                        style="color: #7952b3;"></i>
-                                                    Bootstrap
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-4">
-                    <!-- Dự án nhóm -->
-                    <div id="about" class="col-12 col-lg-6"
-                        data-aos="fade-up">
-                        <div class="card h-100 project-card">
-                            <i class="fas fa-gavel bg-icon-decor"></i>
-                            <i
-                                class="fa-solid fa-alarm-clock bg-icon-decor"
-                                style="top: 250px; left: 20px;"></i>
-
-                            <div class="card-body d-flex flex-column p-4">
-
-                                <div
-                                    class="d-flex  mb-2">
-                                    <div>
-                                        <h3 class="text-secondary"><i
-                                                class="fas fa-handshake text-info me-2"></i>
-                                            Group Project - Capstone 1
-                                        </h3>
-                                        <div
-                                            class="d-flex align-items-center justify-content-between">
-                                            <h4
-                                                class="fw-bold text-white mt-1 me-5">ArtAuction
-                                                System</h4>
-                                            <span
-                                                class="badge border border-secondary text-secondary bg-transparent rounded-pill px-3 py-2 ms-4">
-                                                09/2025 - 12/2025
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div
-                                    class=" d-inline-flex align-items-center overflow-hidden mb-3">
-
-                                    <span
-                                        class="px-3 py-2 bg-dark text-secondary fw-bold text-uppercase"
-                                        style="font-size: 0.75rem; letter-spacing: 0.5px;">
-                                        <i class="fas fa-briefcase me-2"></i>Vị
-                                        trí
-                                    </span>
-
-                                    <span class="px-3 py-2 fw-bold text-white"
-                                        style="background: linear-gradient(90deg, rgba(13,202,240,0.15), rgba(13,202,240,0.05)); font-size: 0.9rem;">
-                                        Frontend Developer & Tester
-                                    </span>
-
-                                </div>
-
-                                <ul
-                                    class="list-unstyled d-flex flex-column gap-2 mb-4 text-secondary-light">
-                                    <li class="d-flex align-items-start">
-                                        <i
-                                            class="fas fa-check-circle text-success mt-1 me-2 flex-shrink-0"></i>
-                                        <span>Develop a UI for an online art
-                                            auction website
-                                            (Team of 5 members).</span>
-                                    </li>
-                                    <li class="d-flex align-items-start">
-                                        <i
-                                            class="fas fa-check-circle text-success mt-1 me-2 flex-shrink-0"></i>
-                                        <span>Develop reusable components using
-                                            <strong>Vue.js</strong>.</span>
-                                    </li>
-                                    <li class="d-flex align-items-start">
-                                        <i
-                                            class="fas fa-check-circle text-success mt-1 me-2 flex-shrink-0"></i>
-                                        <span>Handle API calls (Axios),
-                                            Authentication & CRUD.</span>
-                                    </li>
-                                    <li class="d-flex align-items-start">
-                                        <i
-                                            class="fas fa-check-circle text-success mt-1 me-2 flex-shrink-0"></i>
-                                        <span>Manage source code & conflicts via
-                                            GitHub Desktop.</span>
-                                    </li>
-                                </ul>
-
-                                <div class="mt-auto">
-                                    <div class="d-flex flex-wrap gap-2 mb-3">
-                                        <span class="tech-badge">Vue.js</span>
-                                        <span class="tech-badge">Axios</span>
-                                        <span
-                                            class="tech-badge">Bootstrap</span>
-                                        <span class="tech-badge">CSS</span>
-                                    </div>
-
-                                    <div
-                                        class="result-box p-3 rounded-3 d-flex align-items-center gap-3">
-                                        <div
-                                            class="icon-box bg-warning text-dark rounded-circle p-2 d-flex align-items-center justify-content-center">
-                                            <i class="fas fa-trophy"></i>
-                                        </div>
-                                        <div>
-                                            <div
-                                                class="text-white fw-bold">Achievement</div>
-
-                                            <div class="text-white-50"
-                                                style="font-size: 0.85rem;">
-                                                Score <span
-                                                    class="text-warning fw-bold fs-6">8.5/10</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sở thích và mục tiêu-->
-                    <div class="col-12 col-lg-6" data-aos="fade-up">
-                        <div class="card h-100 about-card">
-                            <div class="bg-decoration-blob"></div>
-
-                            <div
-                                class="card-body p-4 d-flex flex-column gap-4 position-relative z-1">
-
-                                <div>
-                                    <h3 class="text-secondary"><i
-                                            class="fas fa-bullseye text-danger me-2"></i>
-                                        Career Goals
-                                    </h3>
-
-                                    <div class="timeline-box">
-                                        <div class="timeline-item active">
-                                            <div
-                                                class="timeline-marker bg-success"></div>
-                                            <div class="timeline-content">
-                                                <h5
-                                                    class="fw-bold text-white mb-1">Frontend
-                                                    Developer</h5>
-                                                <p
-                                                    class="text-secondary small mb-0">
-                                                    Master the fundamentals &
-                                                    Modern frameworks (Vue.js,
-                                                    Bootstrap, React.js,
-                                                    Node.js).
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="timeline-connector"></div>
-
-                                        <div class="timeline-item future">
-                                            <div
-                                                class="timeline-marker bg-primary"></div>
-                                            <div class="timeline-content">
-                                                <div
-                                                    class="d-flex justify-content-between align-items-center mb-1">
-                                                    <h5
-                                                        class="fw-bold text-white mb-0">Fullstack
-                                                        Developer</h5>
-                                                    <span
-                                                        class="badge bg-dark border border-secondary text-secondary"
-                                                        style="font-size: 0.65rem;">3-5
-                                                        Years</span>
-                                                </div>
-                                                <p
-                                                    class="text-secondary small mb-0">
-                                                    Backend Extension
-                                                    (Java/Spring), System Design
-                                                    & Cloud.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="divider-dashed"></div>
-
-                                <div>
-                                    <h3 class="text-secondary"><i
-                                            class="fas fa-heart me-2"></i>
-                                        Hobbies and Soft Skills</h3>
-
-                                    <div class="d-flex flex-wrap gap-2">
-
-                                        <span class="glass-tag skill"
-                                            title="Soft Skill">
-                                            <i
-                                                class="fas fa-users text-info"></i>
-                                            Teamwork
-                                        </span>
-                                        <span class="glass-tag skill"
-                                            title="Soft Skill">
-                                            <i
-                                                class="fas fa-brain text-info"></i>
-                                            Problem Solving
-                                        </span>
-                                        <span class="glass-tag skill"
-                                            title="Soft Skill">
-                                            <i
-                                                class="fas fa-book-reader text-info"></i>
-                                            Hang out with friends
-                                        </span>
-
-                                        <span class="glass-tag hobby"
-                                            title="Hobby">
-                                            <i
-                                                class="fas fa-music text-warning"></i>
-                                            Music
-                                        </span>
-                                        <span class="glass-tag hobby"
-                                            title="Hobby">
-                                            <i
-                                                class="fas fa-film text-warning"></i>
-                                            Movies
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
+            <!-- Content -->
+            <div class="hero-content">
+                <span class="badge">Frontend Developer</span>
+                
+                <h1>
+                    Nguyễn Thị <span class="highlight">Men</span>
+                </h1>
+                
+                <p class="subtitle">
+                    Frontend Developer Intern with expertise in Vue.js, passionate about creating modern web experiences.
+                </p>
+
+                <!-- Contact Info -->
+                <ul class="contact-list">
+                    <li>
+                        <a href="mailto:nguyenthimen190504@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <span>nguyenthimen190504@gmail.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:0828041686" class="contact-item">
+                            <div class="contact-icon">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <span>0828041686</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nguyenmen04" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </div>
+                            <span>github.com/nguyenmen04</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <span>Thanh Khe, Da Nang City</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#skills" class="btn btn-outline">My Skills</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- footer -->
-        <footer id="contact" class="mt-5 py-5"
-            style="background: #15151a; border-top: 1px solid rgba(255,255,255,0.05);">
-            <div class="container">
-                <div
-                    class="row gy-4 justify-content-between align-items-center">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                    <path d="M8 13.5L10 11.5L12 13.5L14 11.5L16 13.5" />
+                </svg>
+                <h2>Career Goals</h2>
+            </div>
 
-                    <div class="col-md-5">
-                        <h3 class="fw-bold text-white mb-2">Let's work together!
-                            🚀</h3>
-                        <p class="text-secondary">
-                            Looking for Frontend & Fullstack internship/job
-                            opportunities.
-                            <br>Ready to connect today.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6 text-md-end">
-                        <div class="d-flex flex-column gap-2">
-                            <a href="mailto:nguyenthimen190504@gmail.com"
-                                class="text-decoration-none text-light hover-primary">
-                                <i
-                                    class="fas fa-envelope me-2 text-secondary"></i>
-                                nguyenthimen190504@gmail.com
-                            </a>
-                            <a href="tel:0828041686"
-                                class="text-decoration-none text-light hover-primary">
-                                <i
-                                    class="fas fa-phone-alt me-2 text-secondary"></i>
-                                0828 041 686
-                            </a>
-                            <div class="mt-2">
-                                <a href="https://github.com/nguyenmen04"
-                                    type="_blank"
-                                    class="text-secondary me-3 fs-5"><i
-                                        class="fab fa-github"></i></a>
-                                <a
-                                    href="https://www.linkedin.com/in/mến-nguyễn-thị-326b053a2"
-                                    type="_blank"
-                                    class="text-secondary me-3 fs-5"><i
-                                        class="fab fa-linkedin"></i></a>
-                                <a
-                                    href="https://www.facebook.com/nguyen.thi.men.912257/"
-                                    type="_blank"
-                                    class="text-secondary fs-5 me-3"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a
-                                    href="https://www.instagram.com/ntmenn.04/"
-                                    type="_blank"
-                                    class="text-secondary fs-5 me-3"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <a
-                                    href="https://www.tiktok.com/@nguyenmen1905j"
-                                    type="_blank"
-                                    class="text-secondary fs-5"><i
-                                        class="fa-brands fa-tiktok"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <h3>Short-term</h3>
+                    <p>A final-year Software Engineering student with a proactive programming mindset and practical experience with Vue.js through a Capstone project. Seeking a Frontend Developer Intern position to apply knowledge to real-world projects, while also seeking a professional internship environment to hone coding skills and learn more about software development processes.</p>
                 </div>
-
-                <hr class="my-4 border-secondary opacity-25">
-
-                <div class="text-center text-secondary small">
-                    &copy; 2025 Nguyen Thi Men. Built with HTML, CSS &
-                    Bootstrap.
+                <div class="goal-card">
+                    <h3>Long-term</h3>
+                    <p>To further develop skills in technologies such as React.js, Node.js, and Java Backend to cultivate a comprehensive systems thinking approach, aiming to become a Fullstack Developer.</p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <!-- script -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+                <h2>Projects & Experience</h2>
+            </div>
 
-        <script>
-            AOS.init({
-                offset: 120, // khoảng cách từ điểm kích hoạt (px)
-                duration: 1000, // thời gian chạy animation (ms)
-                once: true, // chỉ chạy animation 1 lần khi cuộn xuống
+            <div class="timeline">
+                <!-- Capstone Project -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <svg class="icon" viewBox="0 0 24 24" style="stroke: white;">
+                            <path d="M16 18L22 12L16 6" />
+                            <path d="M8 6L2 12L8 18" />
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badges">
+                            <span class="timeline-badge badge-date">Sep 2025 - Dec 2025</span>
+                            <span class="timeline-badge badge-score">Score: 8.5/10</span>
+                        </div>
+                        <h3>ArtAuction – Online Art Auction with AI Verification</h3>
+                        <p class="timeline-role">Front End Developer and Tester</p>
+                        <ul class="timeline-list">
+                            <li>Collaborated with a team of 5 to develop the UI for Admin Dashboard (data management) and User Platform (auction interface), ensuring component reusability with Vue.js</li>
+                            <li>Integrated Axios to call the RESTful API (handling token authentication and data CRUD operations)</li>
+                            <li>Collaborated with the backend team to standardize JSON structure and handle display errors</li>
+                            <li>Used Git/GitHub Desktop to manage source code and resolve conflicts within the team</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Axios</span>
+                            <span class="tech-tag">RESTful API</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Project -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <svg class="icon" viewBox="0 0 24 24" style="stroke: white;">
+                            <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badges">
+                            <span class="timeline-badge badge-score">2025</span>
+                        </div>
+                        <h3>Personal Portfolio Website</h3>
+                        <ul class="timeline-list">
+                            <li>Design and build a responsive static website to showcase personal portfolio and completed projects</li>
+                            <li>Technologies used: HTML5, CSS3, Bootstrap 5</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Bootstrap 5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-learning -->
+                <div class="timeline-item">
+                    <div class="timeline-dot">
+                        <svg class="icon" viewBox="0 0 24 24" style="stroke: white;">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-badges">
+                            <span class="timeline-badge" style="background: var(--primary); color: white;">2024 - 2025</span>
+                        </div>
+                        <h3>Self-learning & Technology Research</h3>
+                        <p class="timeline-role">Developer</p>
+                        <ul class="timeline-list">
+                            <li>Self-study and in-depth research on the Vue.js Framework through online courses on the website/YouTube</li>
+                            <li>Regularly participate in Tech Talks/Seminars at Duy Tan University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-card">
+                <div class="education-content">
+                    <div class="education-header">
+                        <div>
+                            <h3>Duy Tan University</h3>
+                            <p class="education-major">Software Engineering</p>
+                        </div>
+                        <div style="text-align: right;">
+                            <p class="education-year">2022 - 2026</p>
+                            <p class="education-gpa">GPA: 3.26/4.0</p>
+                        </div>
+                    </div>
+                    <div class="achievement-box">
+                        <p><strong>Outstanding achievement:</strong> Completed Group project - Capstone 1 with a score of 8.5/10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 18L22 12L16 6" />
+                    <path d="M8 6L2 12L8 18" />
+                </svg>
+                <h2>Skills & Expertise</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Languages/Frameworks -->
+                <div class="skill-card">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">JavaScript (ES6)</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3 (SCSS)</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub Desktop</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Axios</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Technical Documentation</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies">
+        <div class="container">
+            <div class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                    <path d="M8 13.5L10 11.5L12 13.5L14 11.5L16 13.5" />
+                </svg>
+                <h2>Beyond Code</h2>
+            </div>
+
+            <div class="hobbies-content">
+                <p>Besides my passion for exploring new technologies, I often spend time enjoying movies and participating in extracurricular activities with friends to balance my life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3>Let's Work Together</h3>
+            <p>Open to internship opportunities and collaborations</p>
+            <div class="footer-buttons">
+                <a href="mailto:nguyenthimen190504@gmail.com" class="footer-btn footer-btn-primary">Get in Touch</a>
+                <a href="https://github.com/nguyenmen04" target="_blank" rel="noopener noreferrer" class="footer-btn footer-btn-outline">View GitHub</a>
+            </div>
+            <p class="copyright">© 2026 Nguyễn Thị Men. Designed with passion.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
             });
-        </script>
-    </body>
+        }, observerOptions);
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        // Observe sections
+        document.querySelectorAll('section').forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Observe timeline items
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            timelineObserver.observe(item);
+        });
+
+        // Navigation dots
+        const navDots = document.querySelectorAll('.nav-dot');
+        const sections = document.querySelectorAll('section');
+
+        navDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const sectionId = dot.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Update active nav dot on scroll
+        function updateActiveNavDot() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navDots.forEach(dot => {
+                dot.classList.remove('active');
+                if (dot.getAttribute('data-section') === current) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavDot);
+
+        // Parallax effect for background circles
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            const circle1 = document.querySelector('.bg-circle-1');
+            const circle2 = document.querySelector('.bg-circle-2');
+            
+            if (circle1) circle1.style.transform = `translateY(${scrollY * 0.3}px)`;
+            if (circle2) circle2.style.transform = `translateY(${-scrollY * 0.2}px)`;
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
