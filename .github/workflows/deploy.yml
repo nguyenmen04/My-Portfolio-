@@ -1,8 +1,12 @@
-name: Deploy to S3
+name: Deploy Portfolio to AWS
 
 on:
   push:
     branches: [main]
+
+permissions:
+  id-token: write # Bắt buộc phải có dòng này để dùng OIDC (Web Identity)
+  contents: read
 
 jobs:
   deploy:
@@ -10,11 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy to S3
+      - name: 1. Ket noi AWS bang IAM Role (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          # Thay vì dùng Access Key, ta dùng mã ARN bạn vừa copy
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1 # Region bạn đang dùng
 
-      - run: aws s3 sync . s3://${{ secrets.S3_BUCKET }} --exclude ".git/*" --exclude ".github/*"
+      - name: 2. Day code len S3
+        # Bạn có thể gõ trực tiếp tên bucket vào đây cho đỡ nhầm
+        run: aws s3 sync . s3://men-portfolios-2026 --delete --exclude ".git/*" --exclude ".github/*"
+
+      - name: 3. Xoa Cache CloudFront
+        # Để web cập nhật ngay lập tức sau khi deploy
+        run: aws cloudfront create-invalidation --distribution-id E3GGQ69VEG67K1 --paths "/*"
